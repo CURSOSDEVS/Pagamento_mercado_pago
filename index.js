@@ -47,7 +47,7 @@ app.get('/pagar', async (req, res)=>{
     try {
         //criando a variável de pagamentos
     var pagamento = await mercadoPago.preferences.create(dados);
-    console.log(pagamento);
+   // console.log(pagamento);
 
     //Quando realizamos um pagamento, temos que ir no banco de dados e
     //salvar o pagamento , neste caso é ficticio
@@ -71,7 +71,7 @@ app.post('/not', (req, res)=>{
 
     //enviando uma resposta que a notificação foi recebido
     res.send("Ok");
-})
+});
 
 
 app.listen(80, (req, res)=>{
