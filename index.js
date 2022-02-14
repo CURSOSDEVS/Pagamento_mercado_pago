@@ -74,6 +74,6 @@ app.post('/not', (req, res)=>{
 });
 
 
-app.listen(80, (req, res)=>{
+app.listen(3000, (req, res)=>{
     console.log("Servidor rodando");
 })
